@@ -1,0 +1,111 @@
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.rectangle {
+  width: 600px;
+  height: 800px;
+  background-color: rgba(52, 152, 219, 0.5);
+  border-radius: 20px;
+
+  display: grid;
+  place-items: 20px;
+  font-family: Arial, sans-serif;
+  grid-template-rows: auto auto auto 1fr auto;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+  color: #333;
+}
+
+.instruction-text {
+  font-size: 18px;
+  text-align: center;
+  color: #333333;
+  margin-top: 5px;
+}
+
+.status-text {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  background-color: #27ae60;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.drawing-area {
+  width: 400px;
+  height: 400px;
+  background-color: #000;
+  border-radius: 10px;
+  margin: auto;
+}
+
+#drawingCanvas {
+  width: 400px;
+  height: 400px;
+  background-color: #000;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+  cursor: crosshair;
+}
+
+button {
+  padding: 10px 30px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+#recognizeBtn {
+  background-color: #3498db;
+}
+
+#recognizeBtn:hover {
+  background-color: #2980b9;
+}
+
+#clearBtn {
+  background-color: #e74c3c;
+}
+
+#clearBtn:hover {
+  background-color: #c0392b;
+}
+
+.button-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.result-display {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-top: 15px;
+  min-height: 30px;
+}

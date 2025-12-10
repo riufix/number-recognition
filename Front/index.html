@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.all.min.js"></script>
+</head>
+<body>
+    <div class="rectangle">
+      <div class="title">Reconnaissance de chiffres</div>
+      <div class="instruction-text">Dessinez un nombre de 0 à 9</div>
+      <div id="statusDisplay" class="status-text">-</div>
+      <canvas id="drawingCanvas" width="400" height="400"></canvas>
+      <div id="resultDisplay" class="result-display">-</div>
+      <div class="button-container">
+        <button id="clearBtn">Effacer</button>
+        <button id="recognizeBtn">Reconnaître</button>
+      </div>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
